@@ -8,7 +8,7 @@ jobs:
       - name: taqueria tasks
         uses: ecadlabs/taqueria-github-action@v0.1.2
         with:
-          project_directory: ${GITHUB_WORKSPACE}/my-first-project
+          project_directory: 'my-first-project'
           plugins: '@taqueria/plugin-ligo, @taqueria/plugin-flextesa, @taqueria/plugin-taquito'
           compile_command: compile 
           sandbox_name: local
