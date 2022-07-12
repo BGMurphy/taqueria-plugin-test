@@ -3,7 +3,6 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
     steps:
       - name: taqueria tasks
         uses: ecadlabs/taqueria-github-action@v0.1.0
