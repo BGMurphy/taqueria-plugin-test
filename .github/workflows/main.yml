@@ -3,9 +3,10 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
       - name: taqueria tasks
-        uses: ecadlabs/taqueria-github-action@v0.1.0
+        uses: ecadlabs/taqueria-github-action@v0.1.2
         with:
           project_directory: my-first-project
           plugins: '@taqueria/plugin-ligo, @taqueria/plugin-flextesa, @taqueria/plugin-taquito'
