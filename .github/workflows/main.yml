@@ -2,7 +2,7 @@ on:
   push:
 
 jobs:
-  taqueria tasks:
+  - name: taqueria tasks
     uses: ecadlabs/taqueria-github-action@v0.1.2
     with:
         project_directory: my-first-project
