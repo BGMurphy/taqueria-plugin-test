@@ -1,0 +1,13 @@
+on:
+  push:
+
+jobs:
+  taqueria tasks:
+    uses: ecadlabs/taqueria-github-action@v0.1.2
+    with:
+        project_directory: my-first-project
+        plugins: '@taqueria/plugin-ligo, @taqueria/plugin-flextesa, @taqueria/plugin-taquito'
+        compile_command: compile 
+        sandbox_name: local
+        originate: 'true'
+        tests: 'true'
