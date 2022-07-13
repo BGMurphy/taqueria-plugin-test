@@ -1,7 +1,6 @@
 {
   "name": "my-first-project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,51 @@
   "license": "ISC",
   "devDependencies": {
     "@taqueria/plugin-ligo": "^0.6.5"
-  }
+  },
+  "dependencies": {
+    "ansi-regex": "^5.0.1",
+    "ansi-styles": "^4.3.0",
+    "batching-toposort": "^1.2.0",
+    "braces": "^3.0.2",
+    "cliui": "^7.0.4",
+    "color-convert": "^2.0.1",
+    "color-name": "^1.1.4",
+    "commander": "^6.2.1",
+    "emoji-regex": "^8.0.0",
+    "escalade": "^3.1.1",
+    "fast-glob": "^3.2.11",
+    "fastq": "^1.13.0",
+    "fill-range": "^7.0.1",
+    "fluture": "^14.0.0",
+    "get-caller-file": "^2.0.5",
+    "glob-parent": "^5.1.2",
+    "i18next": "^21.8.13",
+    "is-extglob": "^2.1.1",
+    "is-fullwidth-code-point": "^3.0.0",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "lodash": "^4.17.21",
+    "merge2": "^1.4.1",
+    "micromatch": "^4.0.5",
+    "picomatch": "^2.3.1",
+    "project-name-generator": "^2.1.9",
+    "queue-microtask": "^1.2.3",
+    "rambda": "^7.1.4",
+    "regenerator-runtime": "^0.13.9",
+    "remeda": "^0.0.34",
+    "require-directory": "^2.1.1",
+    "reusify": "^1.0.4",
+    "run-parallel": "^1.2.0",
+    "sanctuary-show": "^2.0.0",
+    "sanctuary-type-identifiers": "^3.0.0",
+    "string-width": "^4.2.3",
+    "strip-ansi": "^6.0.1",
+    "to-regex-range": "^5.0.1",
+    "ts-pattern": "^4.0.4",
+    "wrap-ansi": "^7.0.0",
+    "y18n": "^5.0.8",
+    "yargs-parser": "^21.0.1",
+    "yargs": "^17.5.1"
+  },
+  "description": ""
 }
