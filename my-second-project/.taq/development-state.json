@@ -18,6 +18,15 @@
                     "artifact": "artifacts/counter.tz"
                 }
             ]
+        },
+        "@taqueria/plugin-ligo.compile.1657746104169": {
+            "time": 1657746104169,
+            "output": [
+                {
+                    "contract": "counter.jsligo",
+                    "artifact": "artifacts/counter.tz"
+                }
+            ]
         }
     }
 }
