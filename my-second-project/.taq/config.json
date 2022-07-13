@@ -1,5 +1,11 @@
 {
     "language": "en",
+    "plugins": [
+        {
+            "name": "@taqueria/plugin-ligo",
+            "type": "npm"
+        }
+    ],
     "contractsDir": "contracts",
     "artifactsDir": "artifacts",
     "network": {},
