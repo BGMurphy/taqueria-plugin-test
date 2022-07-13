@@ -2,7 +2,7 @@ on:
   push:
 
 jobs:
-  build:
+  new-project:
     runs-on: ubuntu-latest
     steps:
       - name: Setup repo
@@ -12,9 +12,49 @@ jobs:
         uses: ecadlabs/taqueria-github-action@v0.1.2
         with:
           task: init
-          project_directory: hello-tacos
+          project_directory: my-second-project
           plugins: '@taqueria/plugin-ligo, @taqueria/plugin-flextesa, @taqueria/plugin-taquito'
           compile_command: compile 
           sandbox_name: local
           originate: 'true'
-          tests: 'true'
+          tests: 'false'
+
+  hello-tacos:
+    runs-on: ubuntu-latest
+    name: Compiles and deploys the counter.jsligo contract to a local sandbox
+    steps:
+
+      - name: Setup repo
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: install modules
+        run: |
+          cd hello-tacos
+          npm update
+      - name: compile contracts
+        uses: ./
+        with:
+          project_directory: 'hello-tacos'
+          compile_command: 'compile'
+
+      - name: start local sandbox
+        uses: ./
+        with:
+          project_directory: 'hello-tacos'
+          sandbox_name: 'local'
+
+      - name: originate contracts
+        uses: ./
+        with:
+          project_directory: 'hello-tacos'
+          originate: True
+
+      - name: run tests
+        uses: ./
+        with:
+          project_directory: 'hello-tacos'
+          tests: True
