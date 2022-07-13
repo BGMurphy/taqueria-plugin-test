@@ -1,0 +1,14 @@
+{
+    "operations": {},
+    "tasks": {
+        "@taqueria/plugin-ligo.compile.1657739068579": {
+            "time": 1657739068579,
+            "output": [
+                {
+                    "contract": "counter.jsligo",
+                    "artifact": "artifacts/counter.tz"
+                }
+            ]
+        }
+    }
+}
