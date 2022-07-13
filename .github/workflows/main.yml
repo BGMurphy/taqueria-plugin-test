@@ -2,15 +2,6 @@ on:
   push:
 
 jobs:
-  run_tests:
-    runs-on: ubuntu-20.04
-    steps:
-    - uses: actions/checkout@v2
-    - name: Run script file
-      run: |
-         pwd
-         ls
-      shell: bash
   build:
     runs-on: ubuntu-latest
     steps:
@@ -25,4 +16,4 @@ jobs:
           compile_command: compile 
           sandbox_name: local
           originate: 'true'
-          tests: 'true'
+          tests: 'false'
