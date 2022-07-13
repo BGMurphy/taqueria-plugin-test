@@ -23,9 +23,7 @@
             "sandboxes": [
                 "local"
             ],
-            "storage": {
-                "counter.tz": 42
-            }
+            "storage": {}
         }
     },
     "accounts": {
