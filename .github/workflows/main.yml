@@ -11,7 +11,6 @@ jobs:
       - name: taqueria tasks
         uses: ecadlabs/taqueria-github-action@v0.1.2
         with:
-          task: init
           project_directory: my-second-project
           plugins: '@taqueria/plugin-ligo, @taqueria/plugin-flextesa, @taqueria/plugin-taquito'
           compile_command: compile 
