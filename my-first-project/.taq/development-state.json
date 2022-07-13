@@ -27,6 +27,67 @@
                     "artifact": "artifacts/counter.tz"
                 }
             ]
+        },
+        "@taqueria/plugin-ligo.compile.1657736624335": {
+            "time": 1657736624335,
+            "output": [
+                {
+                    "contract": "counter.jsligo",
+                    "artifact": "artifacts/counter.tz"
+                }
+            ]
+        },
+        "@taqueria/plugin-flextesa.start sandbox.1657737027428": {
+            "time": 1657737027428,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.list accounts.1657737076290": {
+            "time": 1657737076290,
+            "output": [
+                {
+                    "account": "bob",
+                    "balance": "3000 ꜩ",
+                    "address": "tz1aSkwEot3L2kmUvcoxzjMomb9mvBNuzFK6"
+                },
+                {
+                    "account": "alice",
+                    "balance": "3000 ꜩ",
+                    "address": "tz1VSUr8wwNhLAzempoch5d6hLRiTh8Cjcjb"
+                },
+                {
+                    "account": "john",
+                    "balance": "3000 ꜩ",
+                    "address": "tz1Zwoh1QCVAvJ4sVTojMp9pLYp6Ji4NoZy6"
+                },
+                {
+                    "account": "jane",
+                    "balance": "3000 ꜩ",
+                    "address": "tz1aHUAC4oviwJuZF1EvVSvFz7cu9KMNYBph"
+                },
+                {
+                    "account": "joe",
+                    "balance": "3000 ꜩ",
+                    "address": "tz1MVGjgD1YtAPwohsSfk8i3ZiT1yEGM2YXB"
+                }
+            ]
+        },
+        "@taqueria/plugin-taquito.deploy.1657737371941": {
+            "time": 1657737371941,
+            "output": [
+                {
+                    "contract": "counter.tz",
+                    "address": "KT1MK1rq7djD3JowH7Et7ReithBe58MEroBz",
+                    "destination": "local"
+                }
+            ]
+        },
+        "@taqueria/plugin-flextesa.stop sandbox.1657737533568": {
+            "time": 1657737533568,
+            "output": null
+        },
+        "@taqueria/plugin-flextesa.stop sandbox.1657737548978": {
+            "time": 1657737548978,
+            "output": null
         }
     }
 }
