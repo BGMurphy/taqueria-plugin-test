@@ -36,26 +36,13 @@ jobs:
           cd hello-tacos
           npm update
           
-      - name: compile contracts
-        uses: ./
+      - name: taqueria tasks
+        uses: ecadlabs/taqueria-github-action@v0.1.2
         with:
-          project_directory: hello-taco'
-          compile_command: 'compile'
-
-      - name: start local sandbox
-        uses: ./
-        with:
-          project_directory: hello-tacos
-          sandbox_name: 'local'
-
-      - name: originate contracts
-        uses: ./
-        with:
-          project_directory: hello-tacos
-          originate: True
-
-      - name: run tests
-        uses: ./
-        with:
-          project_directory: hello-tacos
-          tests: True
+          task: init
+          project_directory: my-second-project
+          plugins: '@taqueria/plugin-ligo, @taqueria/plugin-flextesa, @taqueria/plugin-taquito'
+          compile_command: compile 
+          sandbox_name: local
+          originate: 'true'
+          tests: 'false'
