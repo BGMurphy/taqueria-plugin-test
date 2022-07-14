@@ -45,4 +45,4 @@ jobs:
           compile_command: compile 
           sandbox_name: local
           originate: 'true'
-          tests: 'false'
+          tests: 'true'
